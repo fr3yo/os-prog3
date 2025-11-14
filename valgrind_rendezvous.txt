@@ -1,304 +1,287 @@
-==22659== Memcheck, a memory error detector
-==22659== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==22659== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==22659== Command: ./rendezvous
-==22659== 
-==22659== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7aa28
-==22659==          to suppress, use: --max-stackframe=137344079408 or greater
-==22659== Invalid read of size 8
-==22659==    at 0x48BA177: swapcontext (swapcontext.S:96)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab80 is 128 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA17E: swapcontext (swapcontext.S:97)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab78 is 120 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA182: swapcontext (swapcontext.S:98)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab48 is 72 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA186: swapcontext (swapcontext.S:99)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab50 is 80 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA18A: swapcontext (swapcontext.S:100)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab58 is 88 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA18E: swapcontext (swapcontext.S:101)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab60 is 96 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA292: swapcontext (swapcontext.S:218)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aba8 is 168 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA29A: swapcontext (swapcontext.S:222)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab68 is 104 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA29E: swapcontext (swapcontext.S:223)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab70 is 112 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab98 is 152 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab28 is 40 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab30 is 48 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
-==22659==    by 0x10938F: thread_a (rendezvous.c:57)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7ab88 is 136 bytes inside a block of size 968 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109999: t_create (t_lib.c:278)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid read of size 4
-==22659==    at 0x10973F: timer_handler (t_lib.c:199)
-==22659==    by 0x48A732F: ??? (in /usr/lib/x86_64-linux-gnu/libc.so.6)
-==22659==    by 0x10942C: thread_b (rendezvous.c:87)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa84 is 4 bytes inside a block of size 56 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109923: t_create (t_lib.c:265)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid write of size 8
-==22659==    at 0x109562: add_to_queue (t_lib.c:63)
-==22659==    by 0x109773: timer_handler (t_lib.c:202)
-==22659==    by 0x48A732F: ??? (in /usr/lib/x86_64-linux-gnu/libc.so.6)
-==22659==    by 0x10942C: thread_b (rendezvous.c:87)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aab0 is 48 bytes inside a block of size 56 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109923: t_create (t_lib.c:265)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Warning: client switching stacks?  SP change: 0x4a7bf38 --> 0x1fff000060
-==22659==          to suppress, use: --max-stackframe=137344074024 or greater
-==22659== Invalid read of size 8
-==22659==    at 0x1095A0: add_to_queue (t_lib.c:70)
-==22659==    by 0x109BC3: t_yield (t_lib.c:349)
-==22659==    by 0x1094ED: main (rendezvous.c:113)
-==22659==  Address 0x4a7aab0 is 48 bytes inside a block of size 56 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109923: t_create (t_lib.c:265)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Invalid write of size 8
-==22659==    at 0x1095B1: add_to_queue (t_lib.c:73)
-==22659==    by 0x109BC3: t_yield (t_lib.c:349)
-==22659==    by 0x1094ED: main (rendezvous.c:113)
-==22659==  Address 0x4a7aab0 is 48 bytes inside a block of size 56 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109923: t_create (t_lib.c:265)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a9b0
-==22659==          to suppress, use: --max-stackframe=137344079528 or greater
-==22659==          further instances of this message will not be shown.
-==22659== Invalid write of size 8
-==22659==    at 0x48BA299: swapcontext (swapcontext.S:219)
-==22659==    by 0x1096F0: schedule (t_lib.c:175)
-==22659==    by 0x109F30: sem_wait (t_lib.c:493)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9a8 is 8,040 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x48BA2BA: swapcontext (swapcontext.S:233)
-==22659==    by 0x1096F0: schedule (t_lib.c:175)
-==22659==    by 0x109F30: sem_wait (t_lib.c:493)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9a8 is 8,040 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x1096F5: schedule (t_lib.c:178)
-==22659==    by 0x109F30: sem_wait (t_lib.c:493)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9b8 is 8,056 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x109705: schedule (t_lib.c:180)
-==22659==    by 0x109F30: sem_wait (t_lib.c:493)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9c0 is 8,064 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x109709: schedule (t_lib.c:182)
-==22659==    by 0x109F30: sem_wait (t_lib.c:493)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9c8 is 8,072 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x109F40: sem_wait (t_lib.c:501)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9f0 is 8,112 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 8
-==22659==    at 0x109F44: sem_wait (t_lib.c:502)
-==22659==    by 0x10934D: thread_a (rendezvous.c:48)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7a9f8 is 8,120 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid write of size 4
-==22659==    at 0x10935D: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 4
-==22659==    at 0x109364: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 4
-==22659==    at 0x109366: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid write of size 4
-==22659==    at 0x10936C: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 4
-==22659==    at 0x10936F: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== Invalid read of size 4
-==22659==    at 0x109377: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094C6: main (rendezvous.c:108)
-==22659== 
-==22659== 
-==22659== Process terminating with default action of signal 14 (SIGALRM)
-==22659==    at 0x109366: thread_a (rendezvous.c:53)
-==22659==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22659== 
-==22659== HEAP SUMMARY:
-==22659==     in use at exit: 23,584 bytes in 11 blocks
-==22659==   total heap usage: 11 allocs, 0 frees, 23,584 bytes allocated
-==22659== 
-==22659== 8,192 bytes in 1 blocks are definitely lost in loss record 11 of 11
-==22659==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22659==    by 0x109A38: t_create (t_lib.c:293)
-==22659==    by 0x1094DF: main (rendezvous.c:109)
-==22659== 
-==22659== LEAK SUMMARY:
-==22659==    definitely lost: 8,192 bytes in 1 blocks
-==22659==    indirectly lost: 0 bytes in 0 blocks
-==22659==      possibly lost: 0 bytes in 0 blocks
-==22659==    still reachable: 15,392 bytes in 10 blocks
-==22659==         suppressed: 0 bytes in 0 blocks
-==22659== Reachable blocks (those to which a pointer was found) are not shown.
-==22659== To see them, rerun with: --leak-check=full --show-leak-kinds=all
-==22659== 
-==22659== For lists of detected and suppressed errors, rerun with: -s
-==22659== ERROR SUMMARY: 599181 errors from 31 contexts (suppressed: 0 from 0)
+==22792== Memcheck, a memory error detector
+==22792== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==22792== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==22792== Command: ./rendezvous
+==22792== 
+==22792== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7aa28
+==22792==          to suppress, use: --max-stackframe=137344079408 or greater
+==22792== Invalid read of size 8
+==22792==    at 0x48BA177: swapcontext (swapcontext.S:96)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abd0 is 128 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA17E: swapcontext (swapcontext.S:97)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abc8 is 120 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA182: swapcontext (swapcontext.S:98)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7ab98 is 72 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA186: swapcontext (swapcontext.S:99)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aba0 is 80 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA18A: swapcontext (swapcontext.S:100)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aba8 is 88 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA18E: swapcontext (swapcontext.S:101)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abb0 is 96 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA292: swapcontext (swapcontext.S:218)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abf8 is 168 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA29A: swapcontext (swapcontext.S:222)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abb8 is 104 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA29E: swapcontext (swapcontext.S:223)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abc0 is 112 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abe8 is 152 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7ab78 is 40 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7ab80 is 48 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
+==22792==    by 0x10938F: thread_a (rendezvous.c:57)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7abd8 is 136 bytes inside a block of size 968 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109A38: t_create (t_lib.c:316)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x109CC9: t_terminate (t_lib.c:430)
+==22792==    by 0x109453: thread_b (rendezvous.c:90)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aad8 is 8 bytes inside a block of size 56 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x1099C2: t_create (t_lib.c:303)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x109CD6: t_terminate (t_lib.c:431)
+==22792==    by 0x109453: thread_b (rendezvous.c:90)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aad8 is 8 bytes inside a block of size 56 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x1099C2: t_create (t_lib.c:303)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Invalid write of size 8
+==22792==    at 0x109CE6: t_terminate (t_lib.c:432)
+==22792==    by 0x109453: thread_b (rendezvous.c:90)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aad8 is 8 bytes inside a block of size 56 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x1099C2: t_create (t_lib.c:303)
+==22792==    by 0x1094DF: main (rendezvous.c:109)
+==22792== 
+==22792== Warning: client switching stacks?  SP change: 0x4a7ced8 --> 0x1fff000060
+==22792==          to suppress, use: --max-stackframe=137344070024 or greater
+==22792== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a9b0
+==22792==          to suppress, use: --max-stackframe=137344079528 or greater
+==22792==          further instances of this message will not be shown.
+==22792== Invalid write of size 8
+==22792==    at 0x48BA299: swapcontext (swapcontext.S:219)
+==22792==    by 0x10979A: schedule (t_lib.c:212)
+==22792==    by 0x109F27: sem_wait (t_lib.c:538)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9a8 is 8,040 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x48BA2BA: swapcontext (swapcontext.S:233)
+==22792==    by 0x10979A: schedule (t_lib.c:212)
+==22792==    by 0x109F27: sem_wait (t_lib.c:538)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9a8 is 8,040 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x10979F: schedule (t_lib.c:215)
+==22792==    by 0x109F27: sem_wait (t_lib.c:538)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9b8 is 8,056 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x1097AF: schedule (t_lib.c:217)
+==22792==    by 0x109F27: sem_wait (t_lib.c:538)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9c0 is 8,064 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x1097B3: schedule (t_lib.c:219)
+==22792==    by 0x109F27: sem_wait (t_lib.c:538)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9c8 is 8,072 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x109F37: sem_wait (t_lib.c:546)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9f0 is 8,112 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 8
+==22792==    at 0x109F3B: sem_wait (t_lib.c:547)
+==22792==    by 0x10934D: thread_a (rendezvous.c:48)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7a9f8 is 8,120 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid write of size 4
+==22792==    at 0x10935D: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 4
+==22792==    at 0x109364: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 4
+==22792==    at 0x109366: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid write of size 4
+==22792==    at 0x10936C: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 4
+==22792==    at 0x10936F: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== Invalid read of size 4
+==22792==    at 0x109377: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792==  Address 0x4a7aa1c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22792==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22792==    by 0x109AD7: t_create (t_lib.c:331)
+==22792==    by 0x1094C6: main (rendezvous.c:108)
+==22792== 
+==22792== 
+==22792== Process terminating with default action of signal 14 (SIGALRM)
+==22792==    at 0x109366: thread_a (rendezvous.c:53)
+==22792==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22792== 
+==22792== HEAP SUMMARY:
+==22792==     in use at exit: 22,592 bytes in 11 blocks
+==22792==   total heap usage: 13 allocs, 2 frees, 23,616 bytes allocated
+==22792== 
+==22792== LEAK SUMMARY:
+==22792==    definitely lost: 0 bytes in 0 blocks
+==22792==    indirectly lost: 0 bytes in 0 blocks
+==22792==      possibly lost: 0 bytes in 0 blocks
+==22792==    still reachable: 22,592 bytes in 11 blocks
+==22792==         suppressed: 0 bytes in 0 blocks
+==22792== Reachable blocks (those to which a pointer was found) are not shown.
+==22792== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==22792== 
+==22792== For lists of detected and suppressed errors, rerun with: -s
+==22792== ERROR SUMMARY: 1116175 errors from 29 contexts (suppressed: 0 from 0)
