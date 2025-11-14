@@ -22,6 +22,18 @@
 sem_t *a1_done = NULL;   /* Signals that a1 has completed */
 sem_t *b1_done = NULL;   /* Signals that b1 has completed */
 
+/*
+ * Completion semaphore used by each worker thread to notify the
+ * main thread that it has finished execution.  The main thread
+ * waits on this semaphore for the number of worker threads to
+ * ensure all threads have terminated before cleaning up.  Without
+ * this join mechanism, the main thread could call t_shutdown()
+ * while worker threads are still running, leading to memory
+ * leaks that valgrind will report.  See the assignment README
+ * for further discussion.
+ */
+sem_t *done_sem = NULL;
+
 void thread_a(int id) {
     (void)id;
     printf("Thread A: Starting\n");
@@ -53,6 +65,8 @@ void thread_a(int id) {
     for (volatile int i = 0; i < 1000000; i++);
 
     printf("Thread A: Terminating\n");
+    /* Signal completion to main before terminating. */
+    sem_signal(done_sem);
     t_terminate();
 }
 
@@ -87,6 +101,8 @@ void thread_b(int id) {
     for (volatile int i = 0; i < 1000000; i++);
 
     printf("Thread B: Terminating\n");
+    /* Signal completion to main before terminating. */
+    sem_signal(done_sem);
     t_terminate();
 }
 
@@ -104,14 +120,22 @@ int main(void) {
     sem_init(&a1_done, 0);
     sem_init(&b1_done, 0);
 
+    /* Initialise completion semaphore for thread joins.  Starts
+     * at zero so that sem_wait(done_sem) will block until a
+     * worker signals it. */
+    sem_init(&done_sem, 0);
+
     /* Create threads */
     t_create(thread_a, 1, 1);
     t_create(thread_b, 2, 1);
 
-    /* Let threads run */
-    for (int i = 0; i < 10; i++) {
-        t_yield();
-    }
+    /*
+     * Wait for both worker threads to signal completion.  This
+     * effectively joins on the threads to ensure they have
+     * terminated before we clean up.
+     */
+    sem_wait(done_sem);
+    sem_wait(done_sem);
 
     /*
      * Cleanup – destroy the semaphores to free memory and wake any
@@ -119,6 +143,8 @@ int main(void) {
      */
     sem_destroy(&a1_done);
     sem_destroy(&b1_done);
+    /* Destroy completion semaphore */
+    sem_destroy(&done_sem);
 
     t_shutdown();
 
