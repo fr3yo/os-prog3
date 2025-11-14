@@ -158,20 +158,26 @@ void schedule(void) {
         return;
     }
 
-    /* Save the pointer to the currently running thread. */
+    /* Save the pointer to the currently running thread before switching. */
     tcb *prev = running;
     running = next;
 
-    /* Start the timer for the newly scheduled thread */
+    /* Start the timer for the newly scheduled thread. */
     start_timer();
 
     if (prev == NULL) {
         /* First ever dispatch or previous thread gone. */
         setcontext(running->thread_context);
-        /* Not reached */
+        /* setcontext does not return on success */
     } else {
-        /* Classic context switch. */
+        /* Save the current context and switch to the new one. swapcontext() will
+         * return here when the new thread yields or is preempted. */
         swapcontext(prev->thread_context, running->thread_context);
+        /* When we resume here, the previous thread has been scheduled again.
+         * Restore the running pointer to reflect this thread and restart its timer. */
+        running = prev;
+        /* Rearm the timer for the resumed thread. */
+        start_timer();
     }
 }
 
@@ -347,7 +353,9 @@ void t_yield(void) {
      * 'prev' and use swapcontext().  When we get CPU again, execution
      * continues right after this call. */
     schedule();
-
+    /* After schedule returns via swapcontext(), we have been resumed.
+     * Restart the timer for this thread before releasing SIGALRM. */
+    start_timer();
     /* We're back (after being rescheduled).  Turn interrupts back on. */
     sigrelse(SIGALRM);
 }
@@ -484,7 +492,10 @@ void sem_wait(sem_t *sp) {
          * schedule() will treat it as 'prev' and use swapcontext(). */
         schedule();
         /* When this thread is later signaled and scheduled, execution
-         * continues right here, with SIGALRM still held. */
+         * continues right here, with SIGALRM still held.  Restart the timer
+         * for this thread before releasing SIGALRM so that its time slice
+         * resumes properly. */
+        start_timer();
     }
 
     sigrelse(SIGALRM);
