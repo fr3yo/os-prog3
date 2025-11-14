@@ -24,6 +24,18 @@ sem_t *a1_done = NULL;   /* Signals a1 completion */
 sem_t *b1_done = NULL;   /* Signals b1 completion */
 sem_t *c1_done = NULL;   /* Signals c1 completion */
 
+/*
+ * Completion semaphore used by each worker thread (A, B, C)
+ * to notify the main thread that it has finished execution.
+ * The main thread waits on this semaphore once per worker to
+ * guarantee that all worker threads have terminated before
+ * calling t_shutdown().  Without this join mechanism, the
+ * main thread could shutdown the library while workers are
+ * still running, causing reachable memory to be reported as
+ * leaks by valgrind.
+ */
+sem_t *done_sem = NULL;
+
 void thread_a(int id) {
     (void)id;
     printf("Thread A: Starting\n");
@@ -53,6 +65,8 @@ void thread_a(int id) {
     for (volatile int i = 0; i < 500000; i++);
 
     printf("Thread A: Terminating\n");
+    /* Notify main thread that we have finished before terminating. */
+    sem_signal(done_sem);
     t_terminate();
 }
 
@@ -91,6 +105,8 @@ void thread_b(int id) {
     for (volatile int i = 0; i < 500000; i++);
 
     printf("Thread B: Terminating\n");
+    /* Notify main thread that we have finished before terminating. */
+    sem_signal(done_sem);
     t_terminate();
 }
 
@@ -125,6 +141,8 @@ void thread_c(int id) {
     for (volatile int i = 0; i < 500000; i++);
 
     printf("Thread C: Terminating\n");
+    /* Notify main thread that we have finished before terminating. */
+    sem_signal(done_sem);
     t_terminate();
 }
 
@@ -144,15 +162,20 @@ int main(void) {
     sem_init(&b1_done, 0);
     sem_init(&c1_done, 0);
 
+    /* Create a completion semaphore for joining threads.  Starts at 0
+     * so that sem_wait() will block until each worker signals. */
+    sem_init(&done_sem, 0);
+
     /* Create threads in arbitrary order to show synchronization works */
     t_create(thread_c, 3, 1);
     t_create(thread_a, 1, 1);
     t_create(thread_b, 2, 1);
 
-    /* Let threads run */
-    for (int i = 0; i < 15; i++) {
-        t_yield();
-    }
+    /* Wait for all three worker threads to finish.  Each worker
+     * signals done_sem once prior to termination. */
+    sem_wait(done_sem);
+    sem_wait(done_sem);
+    sem_wait(done_sem);
 
     /*
      * Cleanup – destroy semaphores to free memory and wake any
@@ -162,6 +185,8 @@ int main(void) {
     sem_destroy(&a1_done);
     sem_destroy(&b1_done);
     sem_destroy(&c1_done);
+    /* Destroy completion semaphore */
+    sem_destroy(&done_sem);
 
     t_shutdown();
 
