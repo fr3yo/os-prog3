@@ -13,10 +13,10 @@ LIB_NAME = libudthread.a
 # Test programs
 # Uncomment as you complete each phase:
 TESTS = test_phase1
-# TESTS += test_phase2
-# TESTS += test_phase3
+TESTS += test_phase2
+TESTS += test_phase3
 # TESTS += test_phase4_mailbox test_phase4_messaging
-# TESTS += rendezvous partialorder
+TESTS += rendezvous partialorder
 
 # For complete testing (uncomment when all phases done):
 # TESTS = test_phase1 test_phase2 test_phase3 \
