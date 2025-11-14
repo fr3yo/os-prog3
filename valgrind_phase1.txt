@@ -1,1352 +1,1352 @@
-==22842== Memcheck, a memory error detector
-==22842== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
-==22842== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
-==22842== Command: ./test_phase1
-==22842== 
-==22842== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a988
-==22842==          to suppress, use: --max-stackframe=137344079568 or greater
-==22842== Invalid read of size 8
-==22842==    at 0x48BA177: swapcontext (swapcontext.S:96)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA17E: swapcontext (swapcontext.S:97)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA182: swapcontext (swapcontext.S:98)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA186: swapcontext (swapcontext.S:99)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18A: swapcontext (swapcontext.S:100)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18E: swapcontext (swapcontext.S:101)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA292: swapcontext (swapcontext.S:218)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA29A: swapcontext (swapcontext.S:222)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA29E: swapcontext (swapcontext.S:223)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
-==22842==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x109B9C: t_yield (t_lib.c:393)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa34 is 4 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x10956E: add_to_queue (t_lib.c:100)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1096EE: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0C4: swapcontext (swapcontext.S:39)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0CB: swapcontext (swapcontext.S:40)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0CF: swapcontext (swapcontext.S:41)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0D3: swapcontext (swapcontext.S:42)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0D7: swapcontext (swapcontext.S:43)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0DB: swapcontext (swapcontext.S:44)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0DF: swapcontext (swapcontext.S:46)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0E3: swapcontext (swapcontext.S:47)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0E7: swapcontext (swapcontext.S:48)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0EE: swapcontext (swapcontext.S:49)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0F5: swapcontext (swapcontext.S:50)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0F9: swapcontext (swapcontext.S:51)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA101: swapcontext (swapcontext.S:54)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA10D: swapcontext (swapcontext.S:56)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA11B: swapcontext (swapcontext.S:62)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 4
-==22842==    at 0x48BA122: swapcontext (swapcontext.S:64)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 4
-==22842==    at 0x48BA124: swapcontext (swapcontext.S:65)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Syscall param rt_sigprocmask(oldset) points to unaddressable byte(s)
-==22842==    at 0x48BA151: swapcontext (swapcontext.S:80)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7abd8 is 296 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095AC: add_to_queue (t_lib.c:107)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x1095BD: add_to_queue (t_lib.c:110)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Warning: client switching stacks?  SP change: 0x4a7f368 --> 0x1fff000060
-==22842==          to suppress, use: --max-stackframe=137344060664 or greater
-==22842== Invalid read of size 8
-==22842==    at 0x1095AC: add_to_queue (t_lib.c:107)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10943C: main (test_phase1.c:51)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095A0: add_to_queue (t_lib.c:108)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10943C: main (test_phase1.c:51)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x1095BD: add_to_queue (t_lib.c:110)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10943C: main (test_phase1.c:51)
-==22842==  Address 0x4a7cf80 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a930
-==22842==          to suppress, use: --max-stackframe=137344079656 or greater
-==22842==          further instances of this message will not be shown.
-==22842== Invalid write of size 8
-==22842==    at 0x48BA299: swapcontext (swapcontext.S:219)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a928 is 8,072 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2BA: swapcontext (swapcontext.S:233)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a928 is 8,072 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109701: schedule (t_lib.c:215)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a938 is 8,088 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109711: schedule (t_lib.c:217)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a940 is 8,096 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109715: schedule (t_lib.c:219)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109BE5: t_yield (t_lib.c:407)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a960 is 8,128 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109BE9: t_yield (t_lib.c:408)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a968 is 8,136 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x10932F: thread_function (test_phase1.c:20)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a97c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095AC: add_to_queue (t_lib.c:107)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095A0: add_to_queue (t_lib.c:108)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095FB: remove_from_queue (t_lib.c:134)
-==22842==    by 0x10969C: schedule (t_lib.c:191)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x10960A: remove_from_queue (t_lib.c:135)
-==22842==    by 0x10969C: schedule (t_lib.c:191)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1096E6: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA160: swapcontext (swapcontext.S:90)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x48BA167: swapcontext (swapcontext.S:91)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x48BA169: swapcontext (swapcontext.S:92)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA170: swapcontext (swapcontext.S:95)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA177: swapcontext (swapcontext.S:96)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7AA2F: ???
-==22842==    by 0x4A7CE7F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA17E: swapcontext (swapcontext.S:97)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7AA2F: ???
-==22842==    by 0x4A7CE7F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA182: swapcontext (swapcontext.S:98)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA186: swapcontext (swapcontext.S:99)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18A: swapcontext (swapcontext.S:100)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18E: swapcontext (swapcontext.S:101)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA292: swapcontext (swapcontext.S:218)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA29A: swapcontext (swapcontext.S:222)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA29E: swapcontext (swapcontext.S:223)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x109B9C: t_yield (t_lib.c:393)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa34 is 4 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x10956E: add_to_queue (t_lib.c:100)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1096EE: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0C4: swapcontext (swapcontext.S:39)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0CB: swapcontext (swapcontext.S:40)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0CF: swapcontext (swapcontext.S:41)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0D3: swapcontext (swapcontext.S:42)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0D7: swapcontext (swapcontext.S:43)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0DB: swapcontext (swapcontext.S:44)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0DF: swapcontext (swapcontext.S:46)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0E3: swapcontext (swapcontext.S:47)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0E7: swapcontext (swapcontext.S:48)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0EE: swapcontext (swapcontext.S:49)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0F5: swapcontext (swapcontext.S:50)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA0F9: swapcontext (swapcontext.S:51)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA101: swapcontext (swapcontext.S:54)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA10D: swapcontext (swapcontext.S:56)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48BA11B: swapcontext (swapcontext.S:62)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 4
-==22842==    at 0x48BA122: swapcontext (swapcontext.S:64)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 4
-==22842==    at 0x48BA124: swapcontext (swapcontext.S:65)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Syscall param rt_sigprocmask(oldset) points to unaddressable byte(s)
-==22842==    at 0x48BA151: swapcontext (swapcontext.S:80)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7abd8 is 296 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA177: swapcontext (swapcontext.S:96)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7F39F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7d050 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA17E: swapcontext (swapcontext.S:97)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7F39F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7d048 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA182: swapcontext (swapcontext.S:98)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7d018 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA186: swapcontext (swapcontext.S:99)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7d020 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18A: swapcontext (swapcontext.S:100)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7d028 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA18E: swapcontext (swapcontext.S:101)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7d030 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48BA292: swapcontext (swapcontext.S:218)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10932E: thread_function (test_phase1.c:18)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7d078 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x1095BD: add_to_queue (t_lib.c:110)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095AC: add_to_queue (t_lib.c:107)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x109450: main (test_phase1.c:54)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1095A0: add_to_queue (t_lib.c:108)
-==22842==    by 0x109BD0: t_yield (t_lib.c:396)
-==22842==    by 0x109450: main (test_phase1.c:54)
-==22842==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== 
-==22842== More than 100 errors detected.  Subsequent errors
-==22842== will still be recorded, but in less detail than before.
-==22842== Invalid read of size 8
-==22842==    at 0x109BE5: t_yield (t_lib.c:407)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a960 is 8,128 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109BE9: t_yield (t_lib.c:408)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a968 is 8,136 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x10934D: thread_function (test_phase1.c:25)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7a97c is 8,156 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093C4: main (test_phase1.c:38)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x1096D1: schedule (t_lib.c:207)
-==22842==    by 0x109C6A: t_terminate (t_lib.c:439)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC98D: setcontext (setcontext.S:57)
-==22842==    by 0x1096DC: schedule (t_lib.c:207)
-==22842==    by 0x109C6A: t_terminate (t_lib.c:439)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x48AC994: setcontext (setcontext.S:58)
-==22842==    by 0x1096DC: schedule (t_lib.c:207)
-==22842==    by 0x109C6A: t_terminate (t_lib.c:439)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 4
-==22842==    at 0x48AC996: setcontext (setcontext.S:59)
-==22842==    by 0x1096DC: schedule (t_lib.c:207)
-==22842==    by 0x109C6A: t_terminate (t_lib.c:439)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC99D: setcontext (setcontext.S:74)
-==22842==    by 0x109C6A: t_terminate (t_lib.c:439)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9A4: setcontext (setcontext.S:75)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7AA2F: ???
-==22842==    by 0x4A7CE7F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9AB: setcontext (setcontext.S:76)
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7AA2F: ???
-==22842==    by 0x4A7CE7F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9AF: setcontext (setcontext.S:77)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9B3: setcontext (setcontext.S:78)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9B7: setcontext (setcontext.S:79)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9BB: setcontext (setcontext.S:80)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACA86: setcontext (setcontext.S:175)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x48ACA8D: setcontext (setcontext.S:176)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ce48 is 8,072 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACA8E: setcontext (setcontext.S:178)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACA92: setcontext (setcontext.S:179)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACA96: setcontext (setcontext.S:180)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACA9D: setcontext (setcontext.S:181)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACAA1: setcontext (setcontext.S:182)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACAA5: setcontext (setcontext.S:185)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48ACAAE: setcontext (setcontext.S:193)
-==22842==    by 0x1096FC: schedule (t_lib.c:212)
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==    by 0x10934C: thread_function (test_phase1.c:23)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7ce48 is 8,072 bytes inside a block of size 8,192 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109A39: t_create (t_lib.c:331)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109C2B: t_terminate (t_lib.c:430)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109C38: t_terminate (t_lib.c:431)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid write of size 8
-==22842==    at 0x109C48: t_terminate (t_lib.c:432)
-==22842==    by 0x10936A: thread_function (test_phase1.c:26)
-==22842==    by 0x48C0F7F: ??? (__start_context.S:66)
-==22842==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x109924: t_create (t_lib.c:303)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9A4: setcontext (setcontext.S:75)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7F39F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7d050 is 128 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x48AC9AB: setcontext (setcontext.S:76)
-==22842==    by 0x4A7807F: ???
-==22842==    by 0x4A7CF4F: ???
-==22842==    by 0x4A7F39F: ???
-==22842==    by 0x109BD5: t_yield (t_lib.c:402)
-==22842==  Address 0x4a7d048 is 120 bytes inside a block of size 968 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x10999A: t_create (t_lib.c:316)
-==22842==    by 0x109414: main (test_phase1.c:44)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x10950C: free_all_stacks (t_lib.c:66)
-==22842==    by 0x109DAF: t_shutdown (t_lib.c:487)
-==22842==    by 0x10948B: main (test_phase1.c:65)
-==22842==  Address 0x4a7cf08 is 8 bytes inside a block of size 16 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x1094BB: record_stack (t_lib.c:54)
-==22842==    by 0x109AD5: t_create (t_lib.c:353)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
-==22842== Invalid read of size 8
-==22842==    at 0x109518: free_all_stacks (t_lib.c:67)
-==22842==    by 0x109DAF: t_shutdown (t_lib.c:487)
-==22842==    by 0x10948B: main (test_phase1.c:65)
-==22842==  Address 0x4a7cf00 is 0 bytes inside a block of size 16 alloc'd
-==22842==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==22842==    by 0x1094BB: record_stack (t_lib.c:54)
-==22842==    by 0x109AD5: t_create (t_lib.c:353)
-==22842==    by 0x1093EC: main (test_phase1.c:41)
-==22842== 
+==22972== Memcheck, a memory error detector
+==22972== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==22972== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==22972== Command: ./test_phase1
+==22972== 
+==22972== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a988
+==22972==          to suppress, use: --max-stackframe=137344079568 or greater
+==22972== Invalid read of size 8
+==22972==    at 0x48BA177: swapcontext (swapcontext.S:96)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA17E: swapcontext (swapcontext.S:97)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA182: swapcontext (swapcontext.S:98)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA186: swapcontext (swapcontext.S:99)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18A: swapcontext (swapcontext.S:100)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18E: swapcontext (swapcontext.S:101)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA292: swapcontext (swapcontext.S:218)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA29A: swapcontext (swapcontext.S:222)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA29E: swapcontext (swapcontext.S:223)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
+==22972==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase1)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x109B9C: t_yield (t_lib.c:393)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa34 is 4 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x10956E: add_to_queue (t_lib.c:100)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1096EE: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0C4: swapcontext (swapcontext.S:39)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0CB: swapcontext (swapcontext.S:40)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0CF: swapcontext (swapcontext.S:41)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0D3: swapcontext (swapcontext.S:42)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0D7: swapcontext (swapcontext.S:43)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0DB: swapcontext (swapcontext.S:44)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0DF: swapcontext (swapcontext.S:46)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0E3: swapcontext (swapcontext.S:47)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0E7: swapcontext (swapcontext.S:48)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0EE: swapcontext (swapcontext.S:49)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0F5: swapcontext (swapcontext.S:50)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0F9: swapcontext (swapcontext.S:51)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA101: swapcontext (swapcontext.S:54)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA10D: swapcontext (swapcontext.S:56)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA11B: swapcontext (swapcontext.S:62)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 4
+==22972==    at 0x48BA122: swapcontext (swapcontext.S:64)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 4
+==22972==    at 0x48BA124: swapcontext (swapcontext.S:65)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Syscall param rt_sigprocmask(oldset) points to unaddressable byte(s)
+==22972==    at 0x48BA151: swapcontext (swapcontext.S:80)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7abd8 is 296 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095AC: add_to_queue (t_lib.c:107)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x1095BD: add_to_queue (t_lib.c:110)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Warning: client switching stacks?  SP change: 0x4a7f368 --> 0x1fff000060
+==22972==          to suppress, use: --max-stackframe=137344060664 or greater
+==22972== Invalid read of size 8
+==22972==    at 0x1095AC: add_to_queue (t_lib.c:107)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10943C: main (test_phase1.c:51)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095A0: add_to_queue (t_lib.c:108)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10943C: main (test_phase1.c:51)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x1095BD: add_to_queue (t_lib.c:110)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10943C: main (test_phase1.c:51)
+==22972==  Address 0x4a7cf80 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7a930
+==22972==          to suppress, use: --max-stackframe=137344079656 or greater
+==22972==          further instances of this message will not be shown.
+==22972== Invalid write of size 8
+==22972==    at 0x48BA299: swapcontext (swapcontext.S:219)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a928 is 8,072 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2BA: swapcontext (swapcontext.S:233)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a928 is 8,072 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109701: schedule (t_lib.c:215)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a938 is 8,088 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109711: schedule (t_lib.c:217)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a940 is 8,096 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109715: schedule (t_lib.c:219)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109BE5: t_yield (t_lib.c:407)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a960 is 8,128 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109BE9: t_yield (t_lib.c:408)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a968 is 8,136 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x10932F: thread_function (test_phase1.c:20)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a97c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095AC: add_to_queue (t_lib.c:107)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095A0: add_to_queue (t_lib.c:108)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095FB: remove_from_queue (t_lib.c:134)
+==22972==    by 0x10969C: schedule (t_lib.c:191)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x10960A: remove_from_queue (t_lib.c:135)
+==22972==    by 0x10969C: schedule (t_lib.c:191)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1096E6: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA160: swapcontext (swapcontext.S:90)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x48BA167: swapcontext (swapcontext.S:91)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x48BA169: swapcontext (swapcontext.S:92)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA170: swapcontext (swapcontext.S:95)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA177: swapcontext (swapcontext.S:96)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7AA2F: ???
+==22972==    by 0x4A7CE7F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA17E: swapcontext (swapcontext.S:97)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7AA2F: ???
+==22972==    by 0x4A7CE7F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA182: swapcontext (swapcontext.S:98)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA186: swapcontext (swapcontext.S:99)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18A: swapcontext (swapcontext.S:100)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18E: swapcontext (swapcontext.S:101)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA292: swapcontext (swapcontext.S:218)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA29A: swapcontext (swapcontext.S:222)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA29E: swapcontext (swapcontext.S:223)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2A2: swapcontext (swapcontext.S:224)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2A9: swapcontext (swapcontext.S:225)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2AD: swapcontext (swapcontext.S:226)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA2B1: swapcontext (swapcontext.S:229)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x109B9C: t_yield (t_lib.c:393)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa34 is 4 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x10956E: add_to_queue (t_lib.c:100)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1096EE: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0C4: swapcontext (swapcontext.S:39)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0CB: swapcontext (swapcontext.S:40)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0CF: swapcontext (swapcontext.S:41)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0D3: swapcontext (swapcontext.S:42)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0D7: swapcontext (swapcontext.S:43)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0DB: swapcontext (swapcontext.S:44)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0DF: swapcontext (swapcontext.S:46)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0E3: swapcontext (swapcontext.S:47)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0E7: swapcontext (swapcontext.S:48)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0EE: swapcontext (swapcontext.S:49)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0F5: swapcontext (swapcontext.S:50)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA0F9: swapcontext (swapcontext.S:51)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA101: swapcontext (swapcontext.S:54)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA10D: swapcontext (swapcontext.S:56)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48BA11B: swapcontext (swapcontext.S:62)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 4
+==22972==    at 0x48BA122: swapcontext (swapcontext.S:64)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 4
+==22972==    at 0x48BA124: swapcontext (swapcontext.S:65)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Syscall param rt_sigprocmask(oldset) points to unaddressable byte(s)
+==22972==    at 0x48BA151: swapcontext (swapcontext.S:80)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7abd8 is 296 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA177: swapcontext (swapcontext.S:96)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7F39F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7d050 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA17E: swapcontext (swapcontext.S:97)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7F39F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7d048 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA182: swapcontext (swapcontext.S:98)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7d018 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA186: swapcontext (swapcontext.S:99)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7d020 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18A: swapcontext (swapcontext.S:100)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7d028 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA18E: swapcontext (swapcontext.S:101)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7d030 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48BA292: swapcontext (swapcontext.S:218)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10932E: thread_function (test_phase1.c:18)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7d078 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x1095BD: add_to_queue (t_lib.c:110)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095AC: add_to_queue (t_lib.c:107)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x109450: main (test_phase1.c:54)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1095A0: add_to_queue (t_lib.c:108)
+==22972==    by 0x109BD0: t_yield (t_lib.c:396)
+==22972==    by 0x109450: main (test_phase1.c:54)
+==22972==  Address 0x4a7aa60 is 48 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== 
+==22972== More than 100 errors detected.  Subsequent errors
+==22972== will still be recorded, but in less detail than before.
+==22972== Invalid read of size 8
+==22972==    at 0x109BE5: t_yield (t_lib.c:407)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a960 is 8,128 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109BE9: t_yield (t_lib.c:408)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a968 is 8,136 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x10934D: thread_function (test_phase1.c:25)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7a97c is 8,156 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093C4: main (test_phase1.c:38)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x1096D1: schedule (t_lib.c:207)
+==22972==    by 0x109C6A: t_terminate (t_lib.c:439)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC98D: setcontext (setcontext.S:57)
+==22972==    by 0x1096DC: schedule (t_lib.c:207)
+==22972==    by 0x109C6A: t_terminate (t_lib.c:439)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab90 is 224 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x48AC994: setcontext (setcontext.S:58)
+==22972==    by 0x1096DC: schedule (t_lib.c:207)
+==22972==    by 0x109C6A: t_terminate (t_lib.c:439)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac58 is 424 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 4
+==22972==    at 0x48AC996: setcontext (setcontext.S:59)
+==22972==    by 0x1096DC: schedule (t_lib.c:207)
+==22972==    by 0x109C6A: t_terminate (t_lib.c:439)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ac70 is 448 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC99D: setcontext (setcontext.S:74)
+==22972==    by 0x109C6A: t_terminate (t_lib.c:439)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab50 is 160 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9A4: setcontext (setcontext.S:75)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7AA2F: ???
+==22972==    by 0x4A7CE7F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7ab30 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9AB: setcontext (setcontext.S:76)
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7AA2F: ???
+==22972==    by 0x4A7CE7F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7ab28 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9AF: setcontext (setcontext.S:77)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aaf8 is 72 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9B3: setcontext (setcontext.S:78)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab00 is 80 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9B7: setcontext (setcontext.S:79)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab08 is 88 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9BB: setcontext (setcontext.S:80)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab10 is 96 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACA86: setcontext (setcontext.S:175)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab58 is 168 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x48ACA8D: setcontext (setcontext.S:176)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ce48 is 8,072 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACA8E: setcontext (setcontext.S:178)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab20 is 112 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACA92: setcontext (setcontext.S:179)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab18 is 104 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACA96: setcontext (setcontext.S:180)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab48 is 152 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACA9D: setcontext (setcontext.S:181)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aad8 is 40 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACAA1: setcontext (setcontext.S:182)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aae0 is 48 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACAA5: setcontext (setcontext.S:185)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ab38 is 136 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48ACAAE: setcontext (setcontext.S:193)
+==22972==    by 0x1096FC: schedule (t_lib.c:212)
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==    by 0x10934C: thread_function (test_phase1.c:23)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7ce48 is 8,072 bytes inside a block of size 8,192 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109A39: t_create (t_lib.c:331)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109C2B: t_terminate (t_lib.c:430)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109C38: t_terminate (t_lib.c:431)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid write of size 8
+==22972==    at 0x109C48: t_terminate (t_lib.c:432)
+==22972==    by 0x10936A: thread_function (test_phase1.c:26)
+==22972==    by 0x48C0F7F: ??? (__start_context.S:66)
+==22972==  Address 0x4a7aa38 is 8 bytes inside a block of size 56 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x109924: t_create (t_lib.c:303)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9A4: setcontext (setcontext.S:75)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7F39F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7d050 is 128 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x48AC9AB: setcontext (setcontext.S:76)
+==22972==    by 0x4A7807F: ???
+==22972==    by 0x4A7CF4F: ???
+==22972==    by 0x4A7F39F: ???
+==22972==    by 0x109BD5: t_yield (t_lib.c:402)
+==22972==  Address 0x4a7d048 is 120 bytes inside a block of size 968 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x10999A: t_create (t_lib.c:316)
+==22972==    by 0x109414: main (test_phase1.c:44)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x10950C: free_all_stacks (t_lib.c:66)
+==22972==    by 0x109DAF: t_shutdown (t_lib.c:487)
+==22972==    by 0x10948B: main (test_phase1.c:65)
+==22972==  Address 0x4a7cf08 is 8 bytes inside a block of size 16 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x1094BB: record_stack (t_lib.c:54)
+==22972==    by 0x109AD5: t_create (t_lib.c:353)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
+==22972== Invalid read of size 8
+==22972==    at 0x109518: free_all_stacks (t_lib.c:67)
+==22972==    by 0x109DAF: t_shutdown (t_lib.c:487)
+==22972==    by 0x10948B: main (test_phase1.c:65)
+==22972==  Address 0x4a7cf00 is 0 bytes inside a block of size 16 alloc'd
+==22972==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==22972==    by 0x1094BB: record_stack (t_lib.c:54)
+==22972==    by 0x109AD5: t_create (t_lib.c:353)
+==22972==    by 0x1093EC: main (test_phase1.c:41)
+==22972== 
 === Phase 1 Test: Basic Thread Operations ===
 
 Main: Initializing thread library
@@ -1372,12 +1372,12 @@ Main: All threads should have run
 
 Main: Shutting down thread library
 === Phase 1 Test Completed ===
-==22842== 
-==22842== HEAP SUMMARY:
-==22842==     in use at exit: 0 bytes in 0 blocks
-==22842==   total heap usage: 15 allocs, 15 frees, 32,816 bytes allocated
-==22842== 
-==22842== All heap blocks were freed -- no leaks are possible
-==22842== 
-==22842== For lists of detected and suppressed errors, rerun with: -s
-==22842== ERROR SUMMARY: 298 errors from 130 contexts (suppressed: 0 from 0)
+==22972== 
+==22972== HEAP SUMMARY:
+==22972==     in use at exit: 0 bytes in 0 blocks
+==22972==   total heap usage: 15 allocs, 15 frees, 32,816 bytes allocated
+==22972== 
+==22972== All heap blocks were freed -- no leaks are possible
+==22972== 
+==22972== For lists of detected and suppressed errors, rerun with: -s
+==22972== ERROR SUMMARY: 298 errors from 130 contexts (suppressed: 0 from 0)
