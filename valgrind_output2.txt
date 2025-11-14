@@ -1,0 +1,697 @@
+==21707== Memcheck, a memory error detector
+==21707== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==21707== Using Valgrind-3.22.0 and LibVEX; rerun with -h for copyright info
+==21707== Command: ./test_phase2
+==21707== 
+==21707== Warning: client switching stacks?  SP change: 0x1fff000058 --> 0x4a7f328
+==21707==          to suppress, use: --max-stackframe=137344060720 or greater
+==21707== Invalid write of size 8
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f298 is 8,024 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849893: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f298 is 8,024 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849897: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2d0 is 8,080 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849898: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2d8 is 8,088 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C4E: t_terminate (t_lib.c:371)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2e8 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C5A: t_terminate (t_lib.c:373)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2e8 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C67: t_terminate (t_lib.c:374)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2e8 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C77: t_terminate (t_lib.c:375)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2e8 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C83: t_terminate (t_lib.c:377)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f2e8 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x1094B7: main (test_phase2.c:56)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9A4: setcontext (setcontext.S:75)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f480 is 128 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9AB: setcontext (setcontext.S:76)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f478 is 120 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9AF: setcontext (setcontext.S:77)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f448 is 72 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9B3: setcontext (setcontext.S:78)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f450 is 80 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9B7: setcontext (setcontext.S:79)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f458 is 88 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48AC9BB: setcontext (setcontext.S:80)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f460 is 96 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA86: setcontext (setcontext.S:175)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f4a8 is 168 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA8E: setcontext (setcontext.S:178)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f470 is 112 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA92: setcontext (setcontext.S:179)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f468 is 104 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA96: setcontext (setcontext.S:180)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f498 is 152 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA9D: setcontext (setcontext.S:181)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f428 is 40 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACAA1: setcontext (setcontext.S:182)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f430 is 48 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACAA5: setcontext (setcontext.S:185)
+==21707==    by 0x1092E8: ??? (in /home/ronaldo/os-prog3/test_phase2)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f488 is 136 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C35: t_terminate (t_lib.c:369)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f390 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C42: t_terminate (t_lib.c:370)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f390 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid write of size 8
+==21707==    at 0x109C52: t_terminate (t_lib.c:371)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f390 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C5E: t_terminate (t_lib.c:373)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f388 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C6B: t_terminate (t_lib.c:374)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f388 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid write of size 8
+==21707==    at 0x109C7B: t_terminate (t_lib.c:375)
+==21707==    by 0x109388: high_priority_thread (test_phase2.c:27)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7f388 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x1094D0: main (test_phase2.c:57)
+==21707== 
+==21707== Invalid write of size 8
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a8f8 is 8,024 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849893: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a8f8 is 8,024 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849897: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a930 is 8,080 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x4849898: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a938 is 8,088 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C4E: t_terminate (t_lib.c:371)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C5A: t_terminate (t_lib.c:373)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C67: t_terminate (t_lib.c:374)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C77: t_terminate (t_lib.c:375)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C83: t_terminate (t_lib.c:377)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a948 is 8,104 bytes inside a block of size 8,192 free'd
+==21707==    at 0x484988F: free (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109C4D: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Block was alloc'd at
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x109A50: t_create (t_lib.c:287)
+==21707==    by 0x109476: main (test_phase2.c:52)
+==21707== 
+==21707== Syscall param rt_sigprocmask(set) contains uninitialised byte(s)
+==21707==    at 0x48AC980: setcontext (setcontext.S:50)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Syscall param rt_sigprocmask(set) points to uninitialised byte(s)
+==21707==    at 0x48AC980: setcontext (setcontext.S:50)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7ab88 is 296 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x48AC98D: setcontext (setcontext.S:57)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x48AC994: setcontext (setcontext.S:58)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Conditional jump or move depends on uninitialised value(s)
+==21707==    at 0x48AC994: setcontext (setcontext.S:58)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x48AC996: setcontext (setcontext.S:59)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Conditional jump or move depends on uninitialised value(s)
+==21707==    at 0x48AC996: setcontext (setcontext.S:59)
+==21707==    by 0x1096F8: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x48ACA86: setcontext (setcontext.S:175)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x48ACA8D: setcontext (setcontext.S:176)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA8E: setcontext (setcontext.S:178)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aad0 is 112 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA92: setcontext (setcontext.S:179)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aac8 is 104 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA96: setcontext (setcontext.S:180)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aaf8 is 152 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACA9D: setcontext (setcontext.S:181)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aa88 is 40 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACAA1: setcontext (setcontext.S:182)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aa90 is 48 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x48ACAA5: setcontext (setcontext.S:185)
+==21707==    by 0x10938B: high_priority_thread (test_phase2.c:28)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7aae8 is 136 bytes inside a block of size 968 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x1099B1: t_create (t_lib.c:272)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C35: t_terminate (t_lib.c:369)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9f0 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C42: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9f0 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid write of size 8
+==21707==    at 0x109C52: t_terminate (t_lib.c:371)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9f0 is 16 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C5E: t_terminate (t_lib.c:373)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9e8 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid read of size 8
+==21707==    at 0x109C6B: t_terminate (t_lib.c:374)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9e8 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Invalid write of size 8
+==21707==    at 0x109C7B: t_terminate (t_lib.c:375)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707==  Address 0x4a7a9e8 is 8 bytes inside a block of size 56 alloc'd
+==21707==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==21707==    by 0x10993B: t_create (t_lib.c:259)
+==21707==    by 0x10948F: main (test_phase2.c:53)
+==21707== 
+==21707== Conditional jump or move depends on uninitialised value(s)
+==21707==    at 0x1095FF: remove_from_queue (t_lib.c:93)
+==21707==    by 0x1096B8: schedule (t_lib.c:154)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x109617: remove_from_queue (t_lib.c:97)
+==21707==    by 0x1096B8: schedule (t_lib.c:154)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x109626: remove_from_queue (t_lib.c:98)
+==21707==    by 0x1096B8: schedule (t_lib.c:154)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Conditional jump or move depends on uninitialised value(s)
+==21707==    at 0x1096C2: schedule (t_lib.c:156)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x1096ED: schedule (t_lib.c:170)
+==21707==    by 0x109C9D: t_terminate (t_lib.c:382)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Conditional jump or move depends on uninitialised value(s)
+==21707==    at 0x109C06: t_terminate (t_lib.c:359)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x109C35: t_terminate (t_lib.c:369)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Use of uninitialised value of size 8
+==21707==    at 0x109C42: t_terminate (t_lib.c:370)
+==21707==    by 0x10942B: low_priority_thread (test_phase2.c:42)
+==21707==    by 0x48C0F7F: ??? (__start_context.S:66)
+==21707== 
+==21707== Warning: client switching stacks?  SP change: 0x4a83c58 --> 0x1fff000060
+==21707==          to suppress, use: --max-stackframe=137344041992 or greater
+=== Phase 2 Test: 2-Level Queue and Time Slicing ===
+
+Main: Creating low priority threads first
+Main: Creating high priority threads
+Main: Creating more low priority threads
+
+Main: Yielding - High priority threads should run first
+Expected: Threads 3,4 (high) run before threads 1,2,5 (low)
+
+High priority thread 3: Starting (priority 0)
+High priority thread 3: Iteration 0
+High priority thread 3: Iteration 1
+High priority thread 3: Iteration 2
+High priority thread 3: Terminating
+High priority thread 4: Starting (priority 0)
+High priority thread 4: Iteration 0
+High priority thread 4: Iteration 1
+High priority thread 4: Iteration 2
+High priority thread 4: Terminating
+Low priority thread 1: Starting (priority 1)
+Low priority thread 1: Iteration 0
+Low priority thread 1: Iteration 1
+Low priority thread 1: Iteration 2
+Low priority thread 1: Terminating
+Low priority thread 2: Starting (priority 1)
+Low priority thread 2: Iteration 0
+Low priority thread 2: Iteration 1
+Low priority thread 2: Iteration 2
+Low priority thread 2: Terminating
+Low priority thread 5: Starting (priority 1)
+Low priority thread 5: Iteration 0
+Low priority thread 5: Iteration 1
+Low priority thread 5: Iteration 2
+Low priority thread 5: Terminating
+
+Main: Shutting down
+=== Phase 2 Test Completed ===
+Note: Time slicing should cause preemption during busy loops
+==21707== 
+==21707== HEAP SUMMARY:
+==21707==     in use at exit: 0 bytes in 0 blocks
+==21707==   total heap usage: 18 allocs, 18 frees, 51,200 bytes allocated
+==21707== 
+==21707== All heap blocks were freed -- no leaks are possible
+==21707== 
+==21707== Use --track-origins=yes to see where uninitialised values come from
+==21707== For lists of detected and suppressed errors, rerun with: -s
+==21707== ERROR SUMMARY: 119 errors from 66 contexts (suppressed: 0 from 0)
