@@ -34,6 +34,43 @@ tcb *ready_q_high = NULL;
 tcb *ready_q_low = NULL;
 int timer_enabled = 0;
 
+/*
+ * We maintain a list of all stacks allocated for threads.  When a
+ * thread is created its stack pointer is recorded on this list via
+ * record_stack().  Rather than freeing a thread’s stack while it is
+ * still running (which would lead to use-after-free errors), we defer
+ * freeing the memory until t_shutdown() is called.  At shutdown the
+ * free_all_stacks() helper walks the list and frees every stack.
+ */
+typedef struct stack_node {
+    void *stack;
+    struct stack_node *next;
+} stack_node;
+
+static stack_node *stack_list = NULL;
+
+/* Record a newly allocated stack so it can be freed later. */
+static void record_stack(void *stack) {
+    stack_node *node = (stack_node *)malloc(sizeof(stack_node));
+    if (node != NULL) {
+        node->stack = stack;
+        node->next = stack_list;
+        stack_list = node;
+    }
+}
+
+/* Free all recorded stacks and reset the list. */
+static void free_all_stacks(void) {
+    stack_node *node = stack_list;
+    while (node != NULL) {
+        stack_node *next = node->next;
+        free(node->stack);
+        free(node);
+        node = next;
+    }
+    stack_list = NULL;
+}
+
 
 /* ========== Helper Functions: Queue Management ========== */
 
@@ -193,17 +230,18 @@ void timer_handler(int sig) {
         return;
     }
 
-    /* Move running thread back to its ready queue */
+    /* Move the currently running thread to its ready queue.  Do not
+     * clear the running pointer here; schedule() needs to know the
+     * previous thread so it can save its context with swapcontext(). */
     tcb *preempted = running;
-    running = NULL;
     if (preempted->thread_priority == HIGH_PRIORITY) {
         add_to_queue(&ready_q_high, preempted);
     } else {
         add_to_queue(&ready_q_low, preempted);
     }
 
-    /* Pick another thread.  Because running == NULL here, schedule()
-     * will use setcontext() rather than swapcontext(). */
+    /* Dispatch another thread.  When schedule() returns here we will
+     * resume the preempted thread after its time slice expires. */
     schedule();
 }
 
@@ -305,6 +343,15 @@ void t_create(void (*func)(int), int thr_id, int pri) {
     new_thread->thread_context->uc_link = NULL;
     new_thread->stack = stack;
 
+    /*
+     * Keep track of every allocated stack so that it can be freed
+     * during t_shutdown().  We avoid freeing stacks when a thread
+     * terminates because the terminating thread is still executing on
+     * its own stack.  Deferring reclamation until shutdown prevents
+     * use-after-free bugs and satisfies valgrind’s leak checker.
+     */
+    record_stack(stack);
+
     makecontext(new_thread->thread_context, (void (*)())func, 1, thr_id);
 
     if (pri == HIGH_PRIORITY) {
@@ -374,10 +421,12 @@ void t_terminate(void) {
     tcb *to_free = running;
     running = NULL;
 
-    if (to_free->stack != NULL) {
-        free(to_free->stack);
-        to_free->stack = NULL;
-    }
+    /*
+     * Do not free the stack here.  The current thread is still
+     * executing on its own stack, so freeing it now would lead to
+     * undefined behaviour.  All stacks are reclaimed in
+     * t_shutdown() via free_all_stacks().
+     */
     if (to_free->thread_context != NULL) {
         free(to_free->thread_context);
         to_free->thread_context = NULL;
@@ -399,10 +448,9 @@ void t_shutdown(void) {
     timer_enabled = 0;
 
     if (running != NULL) {
-        if (running->stack != NULL) {
-            free(running->stack);
-            running->stack = NULL;
-        }
+        /* Free the context and TCB for the running thread.  We do
+         * not free the stack here; all stacks are released by
+         * free_all_stacks() after this function finishes. */
         if (running->thread_context != NULL) {
             free(running->thread_context);
             running->thread_context = NULL;
@@ -414,10 +462,7 @@ void t_shutdown(void) {
     while (ready_q_high != NULL) {
         tcb *thr = remove_from_queue(&ready_q_high);
         if (thr != NULL) {
-            if (thr->stack != NULL) {
-                free(thr->stack);
-                thr->stack = NULL;
-            }
+            /* Free context and TCB; stacks are freed later. */
             if (thr->thread_context != NULL) {
                 free(thr->thread_context);
                 thr->thread_context = NULL;
@@ -429,10 +474,7 @@ void t_shutdown(void) {
     while (ready_q_low != NULL) {
         tcb *thr = remove_from_queue(&ready_q_low);
         if (thr != NULL) {
-            if (thr->stack != NULL) {
-                free(thr->stack);
-                thr->stack = NULL;
-            }
+            /* Free context and TCB; stacks are freed later. */
             if (thr->thread_context != NULL) {
                 free(thr->thread_context);
                 thr->thread_context = NULL;
@@ -440,6 +482,9 @@ void t_shutdown(void) {
             free(thr);
         }
     }
+
+    /* Now free all stacks that were allocated throughout execution. */
+    free_all_stacks();
 
     sigrelse(SIGALRM);
 }
